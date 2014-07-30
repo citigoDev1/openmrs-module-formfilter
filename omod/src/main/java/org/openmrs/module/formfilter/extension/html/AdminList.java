@@ -25,6 +25,20 @@ import org.openmrs.module.web.extension.AdministrationSectionExt;
  */
 public class AdminList extends AdministrationSectionExt {
 	
+	private static String requiredPrivileges = "View Form Filter";
+
+	/**
+	 * Required privilege to see form filter link on admin tab
+	 */
+	public String getRequiredPrivilege() {
+		if (requiredPrivileges == null) {
+			StringBuilder builder = new StringBuilder();
+			requiredPrivileges = builder.toString();
+		}
+		
+		return requiredPrivileges;
+	}
+
 	/**
 	 * @see AdministrationSectionExt#getMediaType()
 	 */

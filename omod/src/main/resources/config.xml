@@ -32,6 +32,15 @@
 		<class>${project.parent.groupId}.${project.parent.artifactId}.extension.html.FormFilterFormHeaderExt</class>
 	</extension>
 	
+	<!-- Required Privileges -->
+	<privilege>
+		<name>View Form Filter</name>
+		<description>
+			View Form Filter
+		</description>
+	</privilege>
+	<!-- /Required Privileges -->
+
 	<!-- Global Property -->
 	<globalProperty>
 		<property>formFilter.useRoleInheritanceComparison</property>
